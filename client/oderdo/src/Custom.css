@@ -1,0 +1,23 @@
+.custom-button {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.custom-card {
+    @apply p-4 border border-gray-200 shadow-lg rounded-lg;
+  }
+  
+  .custom-animation {
+    animation: example 5s infinite;
+  }
+  
+  @keyframes example {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: green;
+    }
+  }

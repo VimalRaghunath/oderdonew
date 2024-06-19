@@ -120,7 +120,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-blue-800"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -198,7 +198,7 @@ function PartnershipMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-blue-800"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -232,29 +232,36 @@ function PartnershipMenu() {
 }
 
 function NavList() {
+
+  const navigate = useNavigate()
+
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <a
         href="#"
-        className="font-medium text-blue-gray-700 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        className="font-medium text-blue-800 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        onClick={() => navigate("/")}
       >
         Home
       </a>
       <a
-        href="#"
-        className="font-medium text-blue-gray-700 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        href=""
+        className="font-medium text-blue-800 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        onClick={() => navigate("/aboutus")}
       >
         About Us
       </a>
       <a
-        href="#"
-        className="font-medium text-blue-gray-700 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        href=""
+        className="font-medium text-blue-800 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        onClick={() => navigate("/technology")}
       >
         Technology
       </a>
       <a
-        href="#"
-        className="font-medium text-blue-gray-700 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        href=""
+        className="font-medium text-blue-800 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        onClick={() => navigate("/investors")}
       >
         Investors
       </a>
@@ -262,13 +269,13 @@ function NavList() {
       <PartnershipMenu />
       <a
         href="#"
-        className="font-medium text-blue-gray-700 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        className="font-medium text-blue-800 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
       >
         FAQS
       </a>
       <a
         href="#"
-        className="font-medium text-blue-gray-700 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
+        className="font-medium text-blue-800 flex items-center gap-5 py-1 pr-1 rounded-lg hover:bg-blue-gray-50 transition duration-300 mr-5"
       >
         Contact Us
       </a>
